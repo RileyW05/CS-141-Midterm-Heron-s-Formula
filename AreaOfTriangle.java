@@ -9,7 +9,7 @@ public class AreaOfTriangle {
 		triangleArea(console, 0, 0, 0);
 	}
 
-	public static void triangleArea(Scanner console, double a, double b, double c){
+	public static double triangleArea(Scanner console, double a, double b, double c){
 		if(console == null) {
 			throw new IllegalArgumentException("Scanner does not exist.");		//throws exception if scanner argument is null.
 		}
@@ -37,7 +37,7 @@ public class AreaOfTriangle {
 		if(Double.isNaN(area)) {
 			throw new IllegalArgumentException("Given values cannot make a triangle.");		//exception thrown if sides don't make a triangle.
 		}
-		System.out.print(area);
+		return(area);
 	}
 }
 
